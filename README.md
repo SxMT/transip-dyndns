@@ -1,7 +1,9 @@
 # Transip-dyndns
 Keeps a dns record on a [transip](http://www.transip.nl) domain up to date with the current WAN IP.
 
-## Configure :heavy_exclamation_mark:
+Forked from and thanks to https://github.com/RolfKoenders/transip-dyndns
+
+## Configure
 In the root folder there is an `config-example.json` file. Save that file as `config.json` and that one will be used. This is the example config:
 
 ```json
@@ -30,17 +32,17 @@ TRANSIP_DNS_RECORD=<name of the dns record to update>
 TRANSIP_LOG_LOCATION=<path to output log file> (default: ./output.log)
 ```
 
-## Docker :whale:
-There is a [docker image](https://hub.docker.com/r/rolfkoenders/transip-dyndns/) for the hipsters who want to run everything with docker.
+## Docker
+There is a [docker image](https://hub.docker.com/r/klokmeister/transip-dyndns/).
 
 ```
-docker pull rolfkoenders/transip-dyndns
+docker pull klokmeister/transip-dyndns
 ```
 
 ### Run
 To run the container we need to mount 2 volumes.
-* Directory where the privateKey :key: can be found.
-* Directory where the config file :page_facing_up: is stored.
+* Directory where the privateKey can be found.
+* Directory where the config file is stored.
 
 ```
 docker run -t -v /home/<user>/.secrets/transip:/secrets -v /home/<user>/configurations/transip-config/:/config <namespace>/transip-dyndns

@@ -1,18 +1,18 @@
 {
   "name": "transip-dyndns",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "transip-dyndns.js",
-  "author": "Rolf Koenders",
+  "author": "Klokmeister",
   "dependencies": {
     "async": "^1.5.0",
     "bluebird": "^3.0.5",
     "bunyan": "^1.5.1",
-    "convict": "^1.0.1",
-    "lodash": "^3.10.1",
+    "convict": "^6.0.0",
+    "lodash": "^4.17.20",
     "request": "^2.67.0",
     "request-promise": "^1.0.2",
-    "transip": "^0.0.4"
+    "transip": "^0.0.6"
   },
   "devDependencies": {},
   "scripts": {
