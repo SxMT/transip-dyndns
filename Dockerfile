@@ -1,4 +1,4 @@
-FROM nodesource/trusty:6.3.1
+FROM node:12
 
 ADD package.json package.json
 RUN npm install
