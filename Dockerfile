@@ -4,4 +4,4 @@ ADD package.json package.json
 RUN npm install
 ADD . .
 
-CMD ["node", "--harmony transip-dyndns.js"]
+CMD ["node", "transip-dyndns.js"]
